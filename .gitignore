@@ -5,3 +5,7 @@ target/
 *.pdb
 exercises/clippy/Cargo.toml
 exercises/clippy/Cargo.lock
+*.o
+rustlings/
+.vscode/
+temp*

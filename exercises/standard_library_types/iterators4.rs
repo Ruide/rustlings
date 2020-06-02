@@ -1,7 +1,5 @@
 // iterators4.rs
 
-// I AM NOT DONE
-
 pub fn factorial(num: u64) -> u64 {
     // Complete this function to return factorial of num
     // Do not use:
@@ -12,6 +10,17 @@ pub fn factorial(num: u64) -> u64 {
     // For the most fun don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+
+    // let mut res = num;
+    // let mut temp_num = num;
+    // while temp_num > 1 {
+    //     res = res * (temp_num -1);
+    //     temp_num -= 1;
+    // }
+    // res
+
+    // But you can also use ranges and iterators to solve this in rust.
+    (1..=num).into_iter().fold(1,|acc,x| acc*x)
 }
 
 #[cfg(test)]
